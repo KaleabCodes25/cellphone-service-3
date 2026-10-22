@@ -39,10 +39,7 @@ public class CellPhoneApplication {
         String owner = input.nextLine();
         cellPhone1.setOwner(owner);
 
-        // ---- Phone 2 ----
-        // The local variables are reused (no "int" or "String" in front this time):
-        // phone 1 already holds its own copy of the values, so overwriting the
-        // variables does not change phone 1.
+
         System.out.println("Enter the information for CellPhone 2:");
         // Prompt user for cell phone information and set the properties
         System.out.print("What is the serial number? ");

@@ -70,6 +70,5 @@ public class CellPhone {
     }
     public void dial(CellPhone phone){
         System.out.println(owner + "is dialing " + phone.phoneNumber);
-
     }
 }
