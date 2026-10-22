@@ -7,9 +7,6 @@ public class CellPhoneApplication {
 
         CellPhone cellPhone1 = new CellPhone();
         CellPhone cellPhone2 = new CellPhone();
-        CellPhone cellPhone3 = new CellPhone(12345,"I phone 12", "verizon", "123-123-1234", " Jacob");
-
-
 
         // Create a scanner object to read user input
         Scanner input = new Scanner(System.in);
@@ -62,6 +59,29 @@ public class CellPhoneApplication {
         System.out.print("Who is the owner of the phone? ");
         owner = input.nextLine();
         cellPhone2.setOwner(owner);
+
+        // phone 3
+
+        System.out.print("What is the serial number? ");
+        serialNumber = input.nextInt();  // Read integer value
+        input.nextLine();  // Consume newline
+
+        System.out.print("What model is the phone? ");
+        model = input.nextLine();  // Read entire line till newline
+
+
+        System.out.print("Who is the carrier? ");
+        carrier = input.nextLine();
+
+
+        System.out.print("What is the phone number? ");
+        phoneNumber = input.nextLine();
+
+
+        System.out.print("Who is the owner of the phone? ");
+        owner = input.nextLine();
+
+        CellPhone cellPhone3 = new CellPhone(serialNumber,model,carrier,phoneNumber,owner);
 
         // Close the scanner: we are done reading input
         input.close();
